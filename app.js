@@ -79,7 +79,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
                     }
 
                     // Create a new record in the database
-                    const newRecord = new U({
+                    const newRecord = new User({
                         identity: user.id,
                         matches: matches,
                         rank: rank,
